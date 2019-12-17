@@ -76,8 +76,7 @@
 
 	<div class="container" id="applist">
 		<div class="card-deck" >
-			<div th:each="app: ${apps}">
-			  
+		
 			  <div class="card mb-4" style="width: 20rem;">
 			    <div class="card-body text-center">
 			      <a th:href="@{/app/}+${app.id}">
@@ -92,11 +91,9 @@
 			      <button th:href="@{/app/}+${app.id}">Launch</button>
 			    </div>
 			    <p th:if="${app.description != null}" th:text="${app.description}" ></p>
-	
-         
          </div>
          
-		   </div>
+		  
 	  </div>
 	</div>
 		
